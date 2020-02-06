@@ -1,0 +1,51 @@
+%%$Id:$
+\begin{frame}{Required Tools}
+  \begin{itemize}
+  \item{autoconf}
+  \item{automake}
+  \item{make}
+  \item{mailutils}
+  \item{makeinfo}
+  \item{fileutils}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Required Libs and Header}
+  \begin{itemize}
+  \item{alsa-devel}
+  \item{cairo-devel}
+  \item{fdupes}
+  \item{fonts-config}
+  \item{fontconfig-devel}
+  \item{freetype2-devel}
+  \item{gpm-devel}
+  \item{gtk3-devel}
+  \item{ncurses-devel}
+  \item{zlib-devel}
+  \item{xz}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{My private build parameters}
+  \begin{itemize}
+  \item{--with-mailutils}
+  \item{--with-kerberos5}
+  \item{--with-sound}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{If something failed}
+  \begin{itemize}
+  \item{--with-xpm=ifavailable}
+  \item{--with-gif=ifavailable}
+  \item{--with-jpeg=ifavailable}
+  \item{--with-png=ifavailable}
+  \item{--with-tiff=ifavailable}
+  \end{itemize}
+\end{frame}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "emacs28"
+%%% End:

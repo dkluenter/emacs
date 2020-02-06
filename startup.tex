@@ -1,0 +1,37 @@
+%%% $Id:$
+\begin{frame}{Speed up init}
+Emacs now uses a \emph{portable dumper} instead of unexec. This
+improves compatibility with memory allocation, and in particular
+provides better \emph{Address Space Layout Randomization} (ASLR).\\
+
+
+  At startup Emacs looks now for a \emph{emacs.pdmp} file and loads
+  the dumped state frome there. \\
+  
+  
+  Emacs now loads, very early in the startup process, a
+  \emph{early-init.el}. Just befor graphical elements and befor
+  package manager is initialized. Installed packages are now activated
+  bevor init file is loaded. Therefor calling
+  \emph{package-initialize} is no longer necessary. \\
+  
+\end{frame}
+
+\begin{frame}{Changes at init}
+  Emacs now follows XDG convention \\
+
+  \url{https://specifications.freedesktop.org/basedir-spec/} \\
+
+  This will default to \emph{~/.config/emacs} and override traditional
+  locations like \emph{~/.emacs.d/} \\
+  
+  Emacs no longer defaults to using \emph{ImageMagick} to display
+  images. This is due to security and stability concerns. \\
+  
+\end{frame}
+
+  
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "emacs28"
+%%% End:
