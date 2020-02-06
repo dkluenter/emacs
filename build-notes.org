@@ -1,55 +1,55 @@
 
 * Emacs-28.0.50 GTK+ Version 3.24.13 cairo version 1.16.0
-- Base Gnu/Linux, OpenSUSE-Tumbleweed
+  - Base Gnu/Linux, OpenSUSE-Tumbleweed
 
 #+LINK: https://git.savannah.gnu.org/git/emacs.git/%s
 
--- Configure options
++ -- Configure options
 
 To fimd out appropriate options:
 
-./configure --help | less
++ ./configure --help | less
 
-./configure \
- --with-mailutils \
---with-kerberos5 \
---with-sound=yes \
---enable-checking-structs (portable dumper)
++ ./configure \
+  --with-mailutils \
+  --with-kerberos5 \
+  --with-sound=yes \
+  --enable-checking-structs (portable dumper)
 
 ** Ausnahmen
 
- - --with-xpm=ifavailable
- - --with-gif=ifavailable
- - --with-jpeg=ifavailable
- - --with-png=ifavailable
- - --with-tiff=ifavailable
+ -  --with-xpm=ifavailable
+ -  --with-gif=ifavailable
+ -  --with-jpeg=ifavailable
+ -  --with-png=ifavailable
+ -  --with-tiff=ifavailable
 
 * New Path 
   function: user-dir
   function: package-user-dir
- - ~/.config/emacs/
- - ~/.config/emacs/elpa
-  
+  -  ~/.config/emacs/
+  -  ~/.config/emacs/elpa
+   
  can be modified by 'customize-package-all'
 
 * Startup Changes
 
-- now XDG convention for init files, that is XDG_CONFIG_HOME defaults
++ now XDG convention for init files, that is XDG_CONFIG_HOME defaults
   to ~/.config/emacs/ This will override traditional locations like
   ’~/.emacs.d/'.
 
-- This can be overridden by definig XDG settings in ~/.bashrc or
++ This can be overridden by definig XDG settings in ~/.bashrc or
   equivalent. Something like
 
   "export XDG_CONFIG_HOME='/nowhere'"
 
-- XDG=Cross Desktop Group
+  XDG=Cross Desktop Group
 
---  URL=https://www.freedesktop.org
+  +LINK  URL=https://www.freedesktop.org
   
---  Specifications for Interoperability.
+  --  Specifications for Interoperability.
   
-- early init file.
++ early init file.
   A early-init.el is loaded very early in the startup process, before
   graphical elements and before package manager is
   initialized. Installed packages are now activated before init files
