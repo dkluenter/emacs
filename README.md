@@ -10,5 +10,6 @@ This directory aims at development of emacs plugins
     -  `build-notes.org`
     -   LaTeX-Beamer file `emacs28.tex`
 
+** Minutes from Emacs Meetup-25-02-2020
      
      
