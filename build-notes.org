@@ -4,9 +4,9 @@
 
 #+LINK: https://git.savannah.gnu.org/git/emacs.git/%s
 
-+ -- Configure options
++  - Configure options
 
-To fimd out appropriate options:
+To find out appropriate options:
 
 + ./configure --help | less
 
