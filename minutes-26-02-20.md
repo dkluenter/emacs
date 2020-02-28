@@ -2,9 +2,11 @@
 
 # Minutes of MeetUp 26-02-2020
 
-At the MeetUp session on Feb. 26.2020  
+At the MeetUp session on Feb. 26.2020 some topics where discussed,
+this are a few minutes that I can remember . :(
 
 ###  change of $EMACS_HOME and $XDG_CONF_HOME directories
+
    -'~/.emacs.d/' could be kept
    -'~/.config/emacs/' might be required if XDG interferes
    
