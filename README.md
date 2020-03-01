@@ -1,8 +1,7 @@
-<!--- $Id:$ --->
 # Emacs
 This directory aims at development of emacs plugins
 
-+ Added to `german-holydays.el`
++ Added to german-holydays.el
 
  `international-womens-day` a holyday for Berlin only (March 8.)
    
