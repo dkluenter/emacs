@@ -7,14 +7,15 @@ this are a few minutes that I can remember . :(
 
 ###  change of $EMACS_HOME and $XDG_CONF_HOME directories
 
-+  ~/.emacs.d/' could be kept
-+  ~/.config/emacs/' might be required if XDG interferes
++  `~/.emacs.d/` could be kept
++  `~/.config/emacs/` might be required if XDG interferes
    
 +   themes integration, security problem?
-+  (Require 'cl) is obsolete, should be (require 'cl-lib) 
++  `(require 'cl)` is obsolete, should be `(require 'cl-lib)` 
   
 ###  Markdown-Mode
-          A few lines frome my init.el
+
+A few lines frome my init.el
 
 ```
    ((autoload 'markdown-mode "markdown-mode" 
@@ -32,7 +33,7 @@ will require in order to compile files.
 Markdown produces restructured text, while Pandoc transforms restructured
 text to printable format like PDF and HTML.
 
-   [Pandoc] (https://pandoc.org/MANUAL.html)
+[Pandoc] (https://pandoc.org/MANUAL.html)
 
 ### Kill entire Line
 
