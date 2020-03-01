@@ -1,5 +1,4 @@
 <!-- $Id:$ -->
-
 # Minutes of MeetUp 26-02-2020
 
 At the MeetUp session on Feb. 26.2020 some topics where discussed,

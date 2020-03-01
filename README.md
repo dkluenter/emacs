@@ -1,3 +1,4 @@
+<!-- $Id:$ -->
 # Emacs
 This directory aims at development of emacs plugins
 
